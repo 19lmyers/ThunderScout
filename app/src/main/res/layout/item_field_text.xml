@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:hint="Field"
+            android:hint="@{field.name}">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/field_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={(String)field.value}" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </FrameLayout>
+
+    <data>
+        <variable
+            name="field"
+            type="dev.chara.thunderscout.model.Field" />
+    </data>
+</layout>
+

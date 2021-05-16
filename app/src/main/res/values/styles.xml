@@ -1,0 +1,104 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="ThunderScout" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorSecondary">@color/primary</item>
+
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+
+        <item name="colorOnPrimary">@android:color/black</item>
+
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:navigationBarColor">@color/navigation_bar</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="M">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="O_MR1">true</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ThunderScout.ShapeAppearance</item>
+        <item name="shapeAppearanceMediumComponent">@style/ThunderScout.ShapeAppearance</item>
+        <item name="shapeAppearanceLargeComponent">@style/ThunderScout.ShapeAppearance</item>
+
+        <item name="preferenceTheme">@style/ThunderScout.PreferenceThemeOverlay</item>
+
+        <item name="materialAlertDialogTheme">@style/ThunderScout.MaterialAlertDialog</item>
+    </style>
+
+    <style name="ThunderScout.LaunchScreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorSecondary">@color/primary</item>
+
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:navigationBarColor">@color/navigation_bar</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="M">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="O_MR1">true</item>
+
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+    <style name="ThunderScout.LicensesTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/action_bar</item>
+        <item name="colorAccent">@color/primary</item>
+
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:navigationBarColor">@color/navigation_bar</item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="M">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="O_MR1">true</item>
+    </style>
+
+    <style name="ThunderScout.MaterialAboutFragment" parent="Theme.Mal.Light" />
+
+    <style name="ThunderScout.PreferenceThemeOverlay" parent="PreferenceThemeOverlay">
+        <item name="android:layout">@layout/fragment_settings</item>
+    </style>
+
+    <style name="ThunderScout.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="textAppearanceSubtitle1">@style/ThunderScout.TitleTextAppearance</item>
+        <item name="textAppearanceButton">@style/ThunderScout.ButtonTextAppearance</item>
+        <item name="shapeAppearance">@style/ThunderScout.ShapeAppearance</item>
+    </style>
+
+    <style name="ThunderScout.ShapeAppearance">
+        <item name="cornerSize">0dp</item>
+    </style>
+
+    <style name="ThunderScout.ShapeAppearance.FAB">
+        <item name="cornerSize">0dp</item>
+    </style>
+
+    <style name="ThunderScout.TitleTextAppearance" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="ThunderScout.SubtitleTextAppearance" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="ThunderScout.ButtonTextAppearance" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="ThunderScout.Widget.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="ThunderScout.Widget.Button.TextButton.IconOnly" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+</resources>

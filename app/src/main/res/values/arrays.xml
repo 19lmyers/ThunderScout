@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alliance_stations">
+        <item>Red 1</item>
+        <item>Red 2</item>
+        <item>Red 3</item>
+        <item>Blue 1</item>
+        <item>Blue 2</item>
+        <item>Blue 3</item>
+    </string-array>
+
+    <string-array name="field_value_types">
+        <item>Integer</item>
+        <item>Boolean</item>
+        <item>Text</item>
+    </string-array>
+
+    <string-array name="pref_app_theme_options">
+        <item>Follow system</item>
+        <!--<item>Follow Battery Saver</item>-->
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="pref_app_theme_values">
+        <item>-1</item>
+        <!--<item>3</item>-->
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

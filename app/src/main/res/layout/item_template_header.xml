@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <Spinner
+            android:id="@+id/alliance_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/label_alliance_station"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/match_number"
+            app:layout_constraintStart_toEndOf="@+id/match_number"
+            app:layout_constraintTop_toTopOf="@+id/match_number"
+            android:entries="@array/alliance_stations"
+            android:popupBackground="@color/surface"
+            tools:text="RED 1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/match_number"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:hint="@string/label_match"
+            app:layout_constraintStart_toEndOf="@+id/team_number"
+            app:layout_constraintTop_toTopOf="@+id/team_number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/match_number_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:text="@={data.matchNumber}" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/team_number"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_team"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/team_number_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:inputType="number"
+                android:text="@={data.teamNumber}" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <data>
+        <variable
+            name="data"
+            type="dev.chara.thunderscout.model.ScoutData" />
+    </data>
+</layout>

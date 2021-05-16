@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="scout"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_scout"
+        android:shortcutShortLabel="@string/shortcut_scout_label_short"
+        android:shortcutLongLabel="@string/shortcut_scout_label_long"
+        tools:targetApi="N_MR1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="dev.chara.thunderscout"
+            android:targetClass="dev.chara.thunderscout.ui.MainActivity"
+            android:data="thunderscout://match_scout">
+        </intent>
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+</shortcuts>

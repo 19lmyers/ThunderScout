@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#ffe082</color>
+
+    <!--<color name="primary">#bb86fc</color>
+    <color name="primary_variant">#3700b3</color>
+    <color name="secondary">#03dac5</color>-->
+
+    <color name="background">#121212</color>
+    <color name="surface">#121212</color>
+
+    <color name="background_emphasis">#212121</color>
+
+    <color name="action_bar">#303030</color>
+
+    <color name="status_bar">#1c1c1c</color>
+    <color name="navigation_bar">@android:color/transparent</color>
+
+    <color name="launch_screen_background">#1c1c1c</color>
+
+    <color name="alliance_red_primary">#331414</color>
+    <color name="alliance_red_primary_variant">#2D1214</color>
+
+    <color name="alliance_blue_primary">#101F2B</color>
+    <color name="alliance_blue_primary_variant">#101C25</color>
+
+    <color name="match_conflict">#37270F</color>
+    <color name="selected_item">#1affe082</color>
+
+</resources>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dataListFragment">
+
+    <fragment
+        android:id="@+id/dataInfoFragment"
+        android:name="dev.chara.thunderscout.ui.data_info.DataInfoFragment"
+        tools:layout="@layout/fragment_data_info">
+        <argument
+            android:name="scoutData"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchScoutFragment"
+        android:name="dev.chara.thunderscout.ui.scouting_flow.ScoutingFlowFragment"
+        tools:layout="@layout/fragment_match_scout">
+        <deepLink app:uri="thunderscout://match_scout" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventListFragment"
+        android:name="dev.chara.thunderscout.ui.event_list.EventListFragment"
+        tools:layout="@layout/fragment_event_list">
+        <action
+            android:id="@+id/toNewEventDialog"
+            app:destination="@id/newEventDialog"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataListFragment"
+        android:name="dev.chara.thunderscout.ui.data_list.DataListFragment"
+        tools:layout="@layout/fragment_data_list">
+        <action
+            android:id="@+id/toMatchScout"
+            app:destination="@id/matchScoutFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toDataInfo"
+            app:destination="@id/dataInfoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toTeamInfo"
+            app:destination="@id/teamInfoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toEventList"
+            app:destination="@id/eventListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toSettings"
+            app:destination="@id/settings"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toAbout"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toOnboarding"
+            app:destination="@id/onboardingFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toMatchConflictDialog"
+            app:destination="@id/matchConflictDialog"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/templateListFragment"
+        android:name="dev.chara.thunderscout.ui.template_list.TemplateListFragment"
+        android:label="TemplateListFragment"
+        tools:layout="@layout/fragment_template_list">
+        <action
+            android:id="@+id/toNewTemplateDialog"
+            app:destination="@id/newTemplateDialog"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <navigation
+        android:id="@+id/settings"
+        app:startDestination="@id/settingsFragment">
+        <fragment
+            android:id="@+id/settingsFragment"
+            android:name="dev.chara.thunderscout.ui.settings.SettingsFragment"
+            tools:layout="@layout/fragment_settings">
+            <action
+                android:id="@+id/toEventList"
+                app:destination="@id/eventListFragment"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            <action
+                android:id="@+id/toGeneralSettings"
+                app:destination="@id/generalSettingsFragment"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            <action
+                android:id="@+id/toTemplateList"
+                app:destination="@id/templateListFragment"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            <action
+                android:id="@+id/toMatchScoutSettings"
+                app:destination="@id/matchScoutSettingsFragment"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            <action
+                android:id="@+id/toBluetoothServerSettings"
+                app:destination="@id/bluetoothServerSettingsFragment"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        </fragment>
+        <fragment
+            android:id="@+id/generalSettingsFragment"
+            android:name="dev.chara.thunderscout.ui.settings.SettingsFragment$GeneralSettingsFragment"
+            tools:layout="@layout/fragment_settings" />
+        <fragment
+            android:id="@+id/matchScoutSettingsFragment"
+            android:name="dev.chara.thunderscout.ui.settings.SettingsFragment$MatchScoutSettingsFragment"
+            tools:layout="@layout/fragment_settings" />
+        <fragment
+            android:id="@+id/bluetoothServerSettingsFragment"
+            android:name="dev.chara.thunderscout.ui.settings.SettingsFragment$BluetoothServerSettingsFragment"
+            tools:layout="@layout/fragment_settings" />
+    </navigation>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="dev.chara.thunderscout.ui.about.AboutFragment"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="dev.chara.thunderscout.ui.onboarding.OnboardingFragment"
+        tools:layout="@layout/fragment_onboarding_welcome">
+        <action
+            android:id="@+id/toTemplateBuilder"
+            app:destination="@id/templateBuilder"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toEventList"
+            app:destination="@id/eventListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toNewEventDialog"
+            app:destination="@id/newEventDialog"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/toNewTemplateDialog"
+            app:destination="@id/newTemplateDialog"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <dialog
+        android:id="@+id/matchConflictDialog"
+        android:name="dev.chara.thunderscout.ui.data_list.match_conflict.MatchConflictDialog"
+        tools:layout="@layout/dialog_match_conflict">
+        <argument
+            android:name="event"
+            app:argType="long" />
+        <argument
+            android:name="matchNumber"
+            app:argType="integer" />
+        <argument
+            android:name="station"
+            app:argType="dev.chara.thunderscout.model.type.AllianceStation" />
+        <action
+            android:id="@+id/toDataInfo"
+            app:destination="@id/dataInfoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </dialog>
+    <dialog
+        android:id="@+id/newEventDialog"
+        android:name="dev.chara.thunderscout.ui.event_list.new_event.NewEventDialog"
+        tools:layout="@layout/dialog_new_event" />
+    <dialog
+        android:id="@+id/newTemplateDialog"
+        android:name="dev.chara.thunderscout.ui.template_list.new_template.NewTemplateDialog"
+        tools:layout="@layout/dialog_new_template">
+        <action
+            android:id="@+id/toTemplateBuilder"
+            app:destination="@id/templateBuilder"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="templateName"
+                app:argType="string" />
+        </action>
+    </dialog>
+    <fragment
+        android:id="@+id/teamInfoFragment"
+        android:name="dev.chara.thunderscout.ui.team_info.TeamInfoFragment"
+        tools:layout="@layout/fragment_team_info">
+        <argument
+            android:name="event"
+            app:argType="long" />
+        <argument
+            android:name="teamNumber"
+            app:argType="string" />
+    </fragment>
+    <navigation
+        android:id="@+id/templateBuilder"
+        app:startDestination="@id/templateBuilderFragment">
+        <fragment
+            android:id="@+id/templateBuilderFragment"
+            android:name="dev.chara.thunderscout.ui.template_builder.TemplateBuilderFragment"
+            tools:layout="@layout/fragment_template_builder">
+            <action
+                android:id="@+id/toNewCategoryDialog"
+                app:destination="@id/newCategoryDialog"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            <action
+                android:id="@+id/toNewFieldDialog"
+                app:destination="@id/newFieldDialog"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            <argument
+                android:name="templateName"
+                app:argType="string" />
+        </fragment>
+        <dialog
+            android:id="@+id/newFieldDialog"
+            android:name="dev.chara.thunderscout.ui.template_builder.new_field.NewFieldDialog"
+            tools:layout="@layout/dialog_new_field">
+            <argument
+                android:name="category"
+                app:argType="dev.chara.thunderscout.model.Category" />
+        </dialog>
+        <dialog
+            android:id="@+id/newCategoryDialog"
+            android:name="dev.chara.thunderscout.ui.template_builder.new_category.NewCategoryDialog"
+            tools:layout="@layout/dialog_new_category" />
+    </navigation>
+</navigation>

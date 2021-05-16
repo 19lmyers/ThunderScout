@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/onboarding_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/onboarding_create_title"
+        android:textAppearance="@style/ThunderScout.TitleTextAppearance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/onboarding_step_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:text="@string/onboarding_create_step_1"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_title" />
+
+    <ImageView
+        android:id="@+id/onboarding_note_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_bluetooth_searching_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_note"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_select_event" />
+
+    <TextView
+        android:id="@+id/onboarding_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/onboarding_create_note"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:layout_constraintStart_toEndOf="@+id/onboarding_note_icon"
+        app:layout_constraintTop_toBottomOf="@+id/button_select_event" />
+
+    <TextView
+        android:id="@+id/onboarding_step_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/onboarding_create_step_2"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_create_template" />
+
+    <TextView
+        android:id="@+id/onboarding_step_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/onboarding_create_step_3"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_create_event" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_create_template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="@string/action_new_template"
+        android:textAppearance="@style/ThunderScout.ButtonTextAppearance"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_step_1"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_step_1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_create_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="@string/action_new_event"
+        android:textAppearance="@style/ThunderScout.ButtonTextAppearance"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_step_2"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_step_2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_select_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="@string/action_select_event"
+        android:textAppearance="@style/ThunderScout.ButtonTextAppearance"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_step_3"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_step_3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_back"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/action_back"
+        android:textAppearance="@style/ThunderScout.ButtonTextAppearance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_next"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/action_next"
+        android:textAppearance="@style/ThunderScout.ButtonTextAppearance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

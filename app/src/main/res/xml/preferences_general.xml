@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="@string/pref_device_name"
+        android:title="Device name" />
+
+    <PreferenceCategory android:title="Appearance">
+
+        <ListPreference
+            android:key="@string/pref_app_theme"
+            android:defaultValue="-1"
+            android:entries="@array/pref_app_theme_options"
+            android:entryValues="@array/pref_app_theme_values"
+            android:title="Theme" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

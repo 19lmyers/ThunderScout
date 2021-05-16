@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        android:key="@string/pref_navigation_settings_general"
+        android:icon="@drawable/ic_settings_24dp"
+        android:layout="@layout/preference_clickable"
+        android:summary="Device name, app theme"
+        android:title="General settings" />
+
+    <Preference
+        app:key="@string/pref_navigation_template_list"
+        android:layout="@layout/preference_clickable"
+        android:summary="View and manage templates"
+        app:icon="@drawable/ic_flag_24dp"
+        app:title="Templates" />
+
+    <Preference
+        app:key="@string/pref_navigation_event_list"
+        android:layout="@layout/preference_clickable"
+        app:icon="@drawable/ic_event_note_24dp"
+        android:summary="View and manage events"
+        app:title="Events" />
+
+    <dev.chara.thunderscout.ui.settings.preference.backport.MasterSwitchPreference
+        android:defaultValue="true"
+        android:key="@string/pref_enable_match_scouting"
+        app:icon="@drawable/ic_create_24dp"
+        android:summary="Scout matches and send them to other devices"
+        android:title="Match scouting" />
+
+    <dev.chara.thunderscout.ui.settings.preference.backport.MasterSwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_enable_bluetooth_server"
+        app:icon="@drawable/ic_bluetooth_searching_24dp"
+        android:summary="Receive data from other devices"
+        android:title="Bluetooth server"
+        app:allowDividerBelow="false" />
+
+    <Preference
+        android:key="@string/pref_navigation_notifications"
+        android:layout="@layout/preference_clickable"
+        app:icon="@drawable/ic_notifications_24dp"
+        android:title="Notifications" />
+
+    <Preference
+        android:key="@string/pref_navigation_app_info"
+        android:layout="@layout/preference_clickable"
+        app:icon="@drawable/ic_perm_device_information_24dp"
+        android:title="App info" />
+
+</PreferenceScreen>

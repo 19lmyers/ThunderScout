@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">ThunderScout 3</string>
+
+    <!-- Actions -->
+
+    <string name="action_scout">Scout a match</string>
+    <string name="action_finish">Finish</string>
+
+    <string name="action_new_event">New Event</string>
+    <string name="action_new_template">New Template</string>
+
+    <string name="action_new_category">New Category</string>
+    <string name="action_new_field">New Field</string>
+
+    <string name="action_select_event">Select Event</string>
+
+    <!-- Onboarding: Actions -->
+
+    <string name="action_get_started">Get Started</string>
+
+    <string name="action_back">Back</string>
+    <string name="action_next">Next</string>
+
+    <string name="action_skip">Skip</string>
+    <string name="action_done">Done</string>
+
+    <!-- Menus: Actions -->
+
+    <string name="action_delete">Delete</string>
+    <string name="action_delete_all">Delete all</string>
+
+    <!-- Dialogs: Actions -->
+
+    <string name="action_cancel">Cancel</string>
+
+    <!-- Dialogs -->
+
+    <string name="new_category_name">Name</string>
+    <string name="new_event_name">Name</string>
+    <string name="new_field_name">Name</string>
+    <string name="new_template_name">Name</string>
+
+    <string name="share_json">Json</string>
+    <string name="share_bluetooth">Bluetooth</string>
+
+    <!-- Fragments -->
+
+    <string name="template_builder_title">Template Builder</string>
+    <string name="template_list_title">Templates</string>
+
+    <string name="events_title">Events</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="about_title">About</string>
+
+    <!-- ViewGroups -->
+
+    <string name="label_team">Team</string>
+    <string name="label_match">Match</string>
+    <string name="label_alliance_station">Alliance Station</string>
+    <string name="label_date">Date</string>
+    <string name="label_source">Source</string>
+
+    <string name="team_number">Team %s</string>
+    <string name="match_number">Match %s</string>
+
+    <string name="num_matches">%s matches</string>
+
+    <!-- Views -->
+
+    <string name="button_minus">-</string>
+    <string name="button_plus">+</string>
+
+    <!-- Onboarding -->
+
+    <string name="onboarding_title">Welcome to ThunderScout 3</string>
+
+    <string name="onboarding_create_title">Let\'s get started</string>
+    <string name="onboarding_create_step_1">1. Create a new template</string>
+    <string name="onboarding_create_step_2">2. Create a new event</string>
+    <string name="onboarding_create_step_3">3. Select your new event</string>
+    <string name="onboarding_create_note">Bluetooth sharing is enabled</string>
+
+    <string name="onboarding_configure_title">One last thing…</string>
+    <string name="onboarding_configure_device_name">Set your device name, if desired</string>
+    <string name="onboarding_configure_device_name_hint">Device Name</string>
+    <string name="onboarding_configure_usage">How do you plan on using this device?</string>
+    <string name="onboarding_configure_match_scouting">Match scouting</string>
+    <string name="onboarding_configure_bt_server">Bluetooth server</string>
+
+    <string name="onboarding_success_title">You\'re all set!</string>
+
+    <!-- Shortcuts -->
+
+    <string name="shortcut_scout_label_short">Scout</string>
+    <string name="shortcut_scout_label_long">Scout a match</string>
+
+</resources>

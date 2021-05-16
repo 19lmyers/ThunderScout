@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textAppearance="@style/ThunderScout.TitleTextAppearance"
+            android:gravity="center"
+            android:text="@{String.valueOf(match.matchNumber)}"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="36sp"
+            tools:text="1" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/match_grid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            app:columnCount="3"
+            app:orientation="horizontal"
+            app:rowCount="2">
+
+            <TextView
+                android:id="@+id/match_red1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/alliance_red_primary"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:textAppearance="@style/ThunderScout.SubtitleTextAppearance"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="24sp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:text="Red 1" />
+
+            <TextView
+                android:id="@+id/match_red2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/alliance_red_primary_variant"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:textAppearance="@style/ThunderScout.SubtitleTextAppearance"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="24sp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:text="Red 2" />
+
+            <TextView
+                android:id="@+id/match_red3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/alliance_red_primary"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:textAppearance="@style/ThunderScout.SubtitleTextAppearance"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="24sp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:text="Red 3" />
+
+            <TextView
+                android:id="@+id/match_blue1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/alliance_blue_primary"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:textAppearance="@style/ThunderScout.SubtitleTextAppearance"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="24sp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:text="Blue 1" />
+
+            <TextView
+                android:id="@+id/match_blue2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/alliance_blue_primary_variant"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:textAppearance="@style/ThunderScout.SubtitleTextAppearance"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="24sp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:text="Blue 2" />
+
+            <TextView
+                android:id="@+id/match_blue3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/alliance_blue_primary"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:textAppearance="@style/ThunderScout.SubtitleTextAppearance"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="24sp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                tools:text="Blue 3" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+
+    <data>
+
+        <variable
+            name="match"
+            type="dev.chara.thunderscout.model.wrapper.MatchWrapper" />
+    </data>
+</layout>

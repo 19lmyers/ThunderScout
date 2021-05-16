@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_people_24dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="72dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/team_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                tools:text="Team 980"
+                android:text="@{@string/team_number(team.teamNumber)}"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/team_descriptor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/team_number"
+                android:text="@{@string/num_matches(team.data.size())}"
+                tools:text="Description" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <data>
+
+        <variable
+            name="team"
+            type="dev.chara.thunderscout.model.wrapper.TeamWrapper" />
+    </data>
+</layout>
